@@ -1,3 +1,6 @@
+/*
+in case of recursion function calling inside function that is going on...
+ */
 public class NumberExample {
     public static void main(String[] args) {
         // write a function that take in anumber and prints it
