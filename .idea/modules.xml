@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binary Search/Binary Search.iml" filepath="$PROJECT_DIR$/Binary Search/Binary Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binary Search In 2-d array/Binary Search In 2-d array.iml" filepath="$PROJECT_DIR$/Binary Search In 2-d array/Binary Search In 2-d array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binary_Interview_Questions/Binary_Interview_Questions.iml" filepath="$PROJECT_DIR$/Binary_Interview_Questions/Binary_Interview_Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bubble Sorted Algorithim/Bubble Sorted Algorithim.iml" filepath="$PROJECT_DIR$/Bubble Sorted Algorithim/Bubble Sorted Algorithim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cycle Sorted Important Qus/Cycle Sorted Important Qus.iml" filepath="$PROJECT_DIR$/Cycle Sorted Important Qus/Cycle Sorted Important Qus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hacker Rank/Hacker Rank.iml" filepath="$PROJECT_DIR$/Hacker Rank/Hacker Rank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImportantQus/ImportantQus.iml" filepath="$PROJECT_DIR$/ImportantQus/ImportantQus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Insertayion Array/Insertation Array.iml" filepath="$PROJECT_DIR$/Insertayion Array/Insertation Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinearSeaching/LinearSeaching.iml" filepath="$PROJECT_DIR$/LinearSeaching/LinearSeaching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern_qustions/Pattern_qustions.iml" filepath="$PROJECT_DIR$/Pattern_qustions/Pattern_qustions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/Patterns/Patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursion programs/Recursion programs.iml" filepath="$PROJECT_DIR$/Recursion programs/Recursion programs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SelectionSorted_Algorithm/SelectionSorted_Algorithm.iml" filepath="$PROJECT_DIR$/SelectionSorted_Algorithm/SelectionSorted_Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String  and StringBuilder/String  and StringBuilder.iml" filepath="$PROJECT_DIR$/String  and StringBuilder/String  and StringBuilder.iml" />
+    </modules>
+  </component>
+</project>
