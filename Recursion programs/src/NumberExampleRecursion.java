@@ -17,7 +17,8 @@ public class NumberExampleRecursion {
          */
 
         System.out.println(n);
-//        print(n+1);
+// this is call tail recursion...
+// this is the last function call..
         print(n+1);
     }
 }
