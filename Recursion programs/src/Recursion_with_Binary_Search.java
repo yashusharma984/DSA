@@ -10,6 +10,7 @@ public class Recursion_with_Binary_Search {
            */
         System.out.println(search(arr,target,0,arr.length-1));
     }
+    // it will return the type same as this...
     static  int search(int[] arr, int target , int start ,  int end){
       // start is greater than end
         if(start>end){
