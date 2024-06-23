@@ -9,7 +9,7 @@ public class nextGreaterLetter {
               char target ='j';
               //o/p: c
               char ans = nextGreatestLetter(word,target);
-        System.out.println(ans);
+              System.out.println(ans);
 
     }
     public static char nextGreatestLetter(char[] letters, char target) {
