@@ -5,6 +5,6 @@ public class oddEven {
         System.out.println(isodd(n));
     }
     static boolean isodd(int n ){
-        return (n&1) == 1;
+        return (n & 1) == 1;
     }
 }
