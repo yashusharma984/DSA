@@ -7,7 +7,7 @@ public class MagicNumber {
         int ans =0;
         int base =4;
 
-       // i  binary represntation it will give (1 1 0) base 2
+       // i  binary represntation it will give (0 1 1) base 2
         // and the loop run 3 times ..you can check by debug
             while (n>0){
             int last= n & 1; // by this you will get binary. 0 1 1
