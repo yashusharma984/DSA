@@ -1,5 +1,5 @@
 // Reverse A numbewr by using Recursion method
-public class Reverse_num {
+public class Reverse_num{
     public static void main(String[] args) {
         rev1(1234);
         System.out.println(rev);
