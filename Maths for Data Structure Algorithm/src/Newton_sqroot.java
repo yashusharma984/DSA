@@ -1,0 +1,21 @@
+// In this program i am finding the sqrt root of 40..
+// With the help of Newton Raphison Method..root= 0.5*(x+(n/x))
+public class Newton_sqroot {
+    public static void main(String[] args) {
+        System.out.println(sqrt(40));
+    }
+    static double sqrt(double n ){
+        double x =n;
+        double root;
+
+        while(true){
+            root = 0.5 *(x+(n/x));
+
+       if(Math.abs(root-x)<0.5){
+           break;
+       }
+        x=root;
+        }
+        return root;
+    }
+}
