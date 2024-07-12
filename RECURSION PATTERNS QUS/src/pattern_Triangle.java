@@ -17,24 +17,28 @@ public class pattern_Triangle {
 
     public static void main(String[] args) {
 
-        triangle(4, 0);
-        triangle2(4, 0);
+//       triangle (4, 0);
+//        triangle2(4, 0);
 
         int[] arr = {4, 3, 2, 1};
-        bubble(arr, arr.length - 1, 0);
+        selection(arr,arr.length,0,0);
         System.out.println(Arrays.toString(arr));
+
+
+//        bubble(arr, arr.length - 1, 0);
+//        System.out.println(Arrays.toString(arr));
     }
 
-    static void triangle(int row, int col) {
+    static void triangle (int row, int col) {
         if (row == 0) {
             return;
         }
         if (col < row) {
             System.out.print("* ");
-            triangle(row, col + 1);
+           triangle (row, col + 1);
         } else {
             System.out.println();
-            triangle(row - 1, 0);
+           triangle(row - 1, 0);
         }
     }
 
@@ -68,6 +72,26 @@ public class pattern_Triangle {
             bubble(arr, row, col + 1);
         } else {
             bubble(arr, row - 1, 0);
+        }
+    }
+
+
+    // selection sort......
+    static void selection( int[] arr, int row, int col , int max) {
+        if (row == 0) {
+            return;
+        }
+        if (col < row) {
+            if(arr[col]>arr[max]){
+                selection(arr,row,col+1 ,col);
+            }else {
+                selection(arr, row, col + 1, max);
+            }
+        } else {
+            int temp = arr[max];
+           arr[max]= arr[row-1];
+            arr[row-1]=temp;
+          selection(arr, row - 1, 0,0);
         }
     }
 }
