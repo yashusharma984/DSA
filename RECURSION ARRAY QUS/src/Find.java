@@ -12,9 +12,11 @@ public class Find {
         System.out.println(findIndexlast(arr,4,arr.length-1)); // O/P:- 4
 
         // here ww find the index... O/P:- [3,4]
-        findAllIndex(arr,4,0);
-        System.out.println(list);
+//        findAllIndex(arr,4,0);
+//        System.out.println(list);
 
+           ArrayList<Integer> ans = findAllIndex(arr,4,0,new ArrayList<>());
+        System.out.println(ans);  // O/P: [3,4] , size of array is 2.
     }
 
 
@@ -65,14 +67,14 @@ public class Find {
     }
 
 
-
-    static ArrayList findAllIndex(int[] arr, int target, int index , ArrayList<Integer> list){
+    // O/P: [3,4] , size of array is 2.
+    static ArrayList<Integer> findAllIndex(int[] arr, int target, int index , ArrayList<Integer> list){
       if(index==arr.length){
         return list ;
     }
         if(arr[index]==target){
         list.add(index);
     }  // call rest of array...
-    findAllIndex(arr,target,index + 1);
+    return findAllIndex(arr,target,index + 1,list);
 }
 }
