@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Find {
+public class Find{
     public static void main(String[] args) {
 //        int[] arr= {2,3,1,4,5};
         int[] arr = {2,3,1,4,4,5};
