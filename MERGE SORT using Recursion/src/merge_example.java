@@ -10,51 +10,55 @@ import java.util.Arrays;
 public class merge_example {
     public static void main(String[] args) {
         int[] arr = {5,3,2,7,21};
-        int[] ans = mergesort(arr);
-        System.out.println(Arrays.toString(ans));
+        mergesortInPlace(arr , 0, arr.length);
+        System.out.println(Arrays.toString(arr));
     }
 
-    private static int[] mergesort(int[] arr) {
-        if(arr.length==1){
-            return  arr;
+    static void  mergesortInPlace(int[] arr , int s , int e) {
+        if(e-s ==1){
+
+            return ;
         }
-        int mid = arr.length/2;
-        int[]left = mergesort(Arrays.copyOfRange(arr,0,mid));
-        int[] right = mergesort(Arrays.copyOfRange(arr,mid,arr.length));
+        int mid = (s+e) / 2;
 
-        return merge(left , right);
+         mergesortInPlace( arr,s,mid);
+         mergesortInPlace(arr,mid,e);
+
+         mergeInPlace(arr,s, mid, e);
     }
 
-    private static int[] merge(int[] first, int[] second) {
-        int [] mix = new int [first.length+second.length];
+    private static void mergeInPlace(int[] arr, int s , int m, int e ) {
+        int[] mix = new int[e - s];
 
-        int i =0;
-        int j =0;
-        int k =0;
+        int i = s;
+        int j = m;
+        int k = 0;
 
-        while(i<first.length && j< second.length){
-            if(first[i]<second[j]){
-                mix[k] = first[i];
+        while (i < m && j < e) {
+            if (arr[i] < arr[j]) {
+                mix[k] = arr[i];
                 i++;
-            }else{
-                mix[k]=second[j];
-                        j++;
+            } else {
+                mix[k] = arr[j];
+                j++;
             }
             k++;
         }
         // it may be possible that one of these arrays is not complete.
         // copy the remaining elements..
-        while (i < first.length){
-            mix[k]=first[i];
+        while (i < m) {
+            mix[k] = arr[i];
             i++;
             k++;
         }
-        while(j<second.length){
-            mix[k] = second[j];
+        while (j < e) {
+            mix[k] = arr[j];
             j++;
             k++;
         }
-        return  mix;
+        for (int l = 0; l <mix.length ; l++) {
+             arr[s+l] = mix[l];
+        }
     }
 
 }
