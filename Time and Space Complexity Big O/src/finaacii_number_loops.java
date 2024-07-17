@@ -1,7 +1,8 @@
 public class finaacii_number_loops {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         for (int i = 0; i < 11; i++) {
-            System.out.println(finacciformula(i));
+            System.out.print(finacciformula(i) + " ");
         }
     }
     static int finacciformula(int n){
